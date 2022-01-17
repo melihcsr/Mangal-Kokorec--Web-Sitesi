@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f9a075e186.js" crossorigin="anonymous"></script>
+    <title>Hakkımızda</title>
+
+    <style>
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Pacifico&display=swap');
+
+
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Josefin Sans', sans-serif;
+            background-color: rgb(94, 15, 15);
+            
+        }
+
+        #pc_videos{
+            width: 100%;
+            height: auto;
+            position: absolute;
+            
+        }
+
+        .sayfa1 img{
+            width: 17%;
+            height: auto;
+            position: absolute;
+            margin-top: 3%;
+            margin-left: 4%;
+            cursor: pointer;
+        }
+
+        .banner{
+            position: absolute;
+            width: 75%;
+            height: 100px;
+            margin-left: 20%;
+            margin-top: 7%;
+        }
+
+
+        .banner ul li{
+            list-style: none;
+            float: left;
+            margin-left: 8.5%;
+            margin-top: 2%;
+        }
+
+        .banner ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 30px;
+            transition: 1s;
+            
+        }
+
+        .banner ul li a:hover{
+            color: red;
+            border-bottom: solid 5px red;
+            padding-bottom: 2%;
+        }
+
+
+        .social{
+        width: 25%;
+        height: 70px;
+        float: right;
+        position: relative;
+        z-index: 5;
+        margin-top: 2%;
+        border: solid 0.5px white;
+        border-radius: 15px 0 0 15px;
+}   
+
+        .social ul li{
+        list-style: none;
+        float: left;
+        margin-left: 16%;
+        margin-top: 1%;
+        color: white;
+        font-size: 28px;
+        display: block;
+        padding: 1%;
+        transition: 0.5s;
+        }
+        .social ul li:hover{
+        font-size: 35px;
+    }
+
+   
+
+
+
+
+    .alt{
+     width: 100%;
+     height: 500px;
+     background-color:#222222;
+     position: absolute;
+     margin-top: 120%;
+     font-family: "Rubik", sans-serif;
+    }
+    @media screen and (max-width:1100px) {
+    .alt{
+        display: none;
+    }}
+    .boxes{
+        width: 27%;
+        height: 150px;
+        float: left;
+
+        margin-left: 4.2%;
+        text-align: center;
+        margin-top:6%;
+        color: white;
+    }
+    .boxes #boxes-baslik{
+        margin-top: 5%;
+        font-size: 20px;
+        color:rgb(255, 255, 255);
+    }
+    #boxes-bilgi{
+        margin-top: 3%;
+        font-size: 20px;
+        color: #9B9B87;
+    }
+    .desig{
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        background-color:#222222;
+        padding-bottom: 3%;
+        padding-top: 3%;
+    }
+    .logo-cizgi img{
+        position: relative;
+        width: 12%;
+        height: auto;
+        margin-left: 43%;
+
+    }
+    #cizgi{
+     width: 100%;
+     height: 1.5px;
+     background-color: white;
+     position: absolute;
+    }
+
+
+    .hak_baslik{
+        width: 50%;
+        height: 10%;
+        position:absolute;
+        margin-top: 50.9%;
+        margin-left: 25%;
+        border-top: solid 2px black;
+        border-left: solid 2px black;
+        border-right: solid 2px black;
+        background-color:rgb(94, 15, 15);
+    }
+    @media screen and (min-width:1400px) {
+        .hak_baslik{
+            margin-top: 51.5%;
+        }
+    }
+    @media screen and (min-width:1500px) {
+     .hak_baslik{
+         margin-top: 52%;
+     }
+    }
+    @media screen and (min-width:1650px) {
+        .hak_baslik{
+            margin-top: 52.5%;
+        }
+    }
+
+    .hak_baslik p{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: 0.2em;
+        
+    }
+
+    .hakk_foto img{
+        width: 40%;
+        height: auto;
+        position: absolute;
+        margin-top: 75%;
+        border-radius: 15px;
+        margin-left: 5%;
+
+
+    }
+
+    .yazi{
+        width: 45%;
+        height: 30%;
+        position: absolute;
+        margin-top: 75%;
+        margin-left: 53%;
+        
+    }
+
+    .yazi p{
+        font-size: 34px;
+        color: white;
+        line-height: 50px;
+        letter-spacing: 3px;
+        text-align: right;
+    }
+
+    @media screen and (max-width:1100px) {
+      .banner{
+          display: none;
+      }
+
+      #pc_videos{
+          display: none;
+      }
+
+      .hak_baslik{
+          display: none;
+      }
+      .sayfa2{
+          display: none;
+      }
+
+      .sayfa1 img{
+          display: none;
+      }
+
+      .social{
+          display: none;
+      }
+  }
+
+
+  .mobile .ust-banner img {
+
+    width: 40%;
+    height: auto;
+    position: absolute;
+    margin-top: 5%;
+    margin-left: 3%;
+    z-index: 3;
+  }
+
+
+  #mobile_video{
+      width: 100%;
+      height: auto;
+      position: absolute;
+      margin-top: 50%;
+  }
+
+  .ust-banner #hak_bas{   
+    position: absolute;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-top: 125%;
+    margin-left: 20%;
+    
+    
+  }
+
+  @media screen and (min-width:400px) {
+      .ust-banner #hak_bas{
+          margin-left: 22%;
+      }
+  }
+
+  @media screen and (min-width:450px) {
+     .ust-banner #hak_bas{
+         
+         margin-top: 122%;
+         margin-left: 25%;
+     }
+ }
+
+ @media screen and (min-width:500px) {
+     .ust-banner #hak_bas{
+         margin-left: 17%;
+         margin-top: 123%;
+     }
+ }
+
+ @media screen and (min-width:550px) {
+     .ust-banner #hak_bas{
+         margin-left: 20%;
+         margin-top: 123%;
+     }
+ }
+
+ @media screen and (min-width:600px) {
+     .ust-banner #hak_bas{
+         margin-left: 21%;
+         margin-top: 123%;
+         font-size: 55px;
+     }
+ }
+
+ @media screen and (min-width:850px) {
+    .ust-banner #hak_bas{
+        margin-left: 22%;
+        margin-top: 126%;
+        font-size: 65px;
+    }
+}
+
+
+
+  #dukkan{
+      width: 95%;
+      height: auto;
+      position: absolute;
+      margin-top: 150%;
+      border-radius: 10px;
+  }
+
+  #yazi-mobile{
+      position: absolute;
+      margin-top: 240%;
+      font-size: 20px;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      width: 100%;
+
+  }
+
+  @media screen and (min-width:400px) {
+    #yazi-mobile{
+       font-size: 25px; 
+    }
+    }
+
+    @media screen and (min-width:500px) {
+   #yazi-mobile{
+      font-size: 30px; 
+   }
+   }
+
+   @media screen and (min-width:600px) {
+    #yazi-mobile{
+       font-size: 35px; 
+    }
+    }
+    @media screen and (min-width:700px) {
+    #yazi-mobile{
+       font-size: 40px; 
+    }
+    }
+
+    @media screen and (min-width:800px) {
+    #yazi-mobile{
+       font-size: 45px; 
+    }
+    }
+    @media screen and (min-width:900px) {
+    #yazi-mobile{
+       font-size: 50px; 
+    }
+    }
+    @media screen and (min-width:1000px) {
+    #yazi-mobile{
+       font-size: 55px; 
+    }
+    }
+
+  .altbanner{
+     width: 100%;
+     height: 500px;
+     background-color: #222222;
+     margin-top: 310%;
+     position: absolute;
+     font-family: "Rubik", sans-serif;
+    }
+    @media screen and (min-width:450px) {
+    .altbanner{
+      height: 600px;
+    }
+    }
+    @media screen and (min-width:550px) {
+    .altbanner{
+      height: 700px;
+    }
+    }
+    @media screen and (min-width:750px) {
+    .altbanner{
+      height: 850px;
+    }
+    }
+    @media screen and (min-width:1000px) {
+    .altbanner{
+      height: 1250px;
+    }
+    }
+
+ .alt-logo{
+     width: 31%;
+     height: auto;
+     margin-left: 26.5%;
+ }
+ .alt-logo img{
+     width: 31%;
+     height: auto;
+     position: relative;
+     
+     margin-top: 7%;
+     border-bottom: solid 2px white;
+ }
+ .adres{
+     width: 100%;
+     height: 25px;
+     position: relative;
+     margin-top: 55%;
+ }
+ .adres p{
+     text-align: center;
+     color: white;
+     font-size: 20px;
+ }
+ .adres2{
+     width: 100%;
+     height: 25px;
+     position: relative;
+ }
+ .adres2 p{
+     text-align: center;
+     color: #9B9B87;
+     font-size: 14px;
+ }
+ .telefon{
+     width: 100%;
+     height: 25px;
+     position: relative;
+     margin-top: 4%;
+ }
+ .telefon p{
+     text-align: center;
+     font-size: 20px;
+     color: white;
+ }
+ .telefon2{
+     width: 100%;
+     height: 25px;
+     position: relative;
+ }
+ .telefon2 p{
+     color: #9B9B87;
+     text-align: center;
+     font-size: 14px;
+     letter-spacing: 2px;
+ }
+ .sosyal{
+     width: 100%;
+     height: 25px;
+     position: relative;
+     margin-top: 4%;
+ }
+ .sosyal p{
+     text-align: center;
+     color: white;
+     font-size: 20px;
+ }
+ .sosyal2{
+     width: 100%;
+     height: 25px;
+     position: relative;
+     
+ }
+ .sosyal2 p{
+     color: #9B9B87;
+     font-size: 14px;
+     float: left;
+     width: 70%;
+     margin-left: 13%;
+     padding:10px;
+     text-align: center;
+ }
+ @media screen and (min-width:450px) {
+ .sosyal2 i{
+     margin-left: 17.5%;
+ }
+ }
+ @media screen and (min-width:500px) {
+ .sosyal2 i{
+     margin-left: 18%;
+ }
+ }
+ @media screen and (min-width:600px) {
+ .sosyal2 i{
+     margin-left: 19%;
+ }
+ }
+ @media screen and (min-width:700px) {
+     .sosyal2 i{
+         margin-left: 20%;
+     }
+ }
+ #designed{
+     width: 100%;
+     text-align: center;
+     color: white;
+     margin-top: 5%;
+     font-size: 18px;
+     padding-top: 2%;
+     border-top: solid 2px white;
+     background-color: #222222;
+     padding-bottom: 2%;
+ }
+
+ .bar{
+     width: 10%;
+     height: 50px;
+     background-color: red;
+ }
+
+ .bar i {
+     color: black;
+     font-size: 20px;
+ }
+
+
+    @media screen and (min-width:1100px) {
+        .mobile{
+            display: none;
+        }
+    }
+
+    #dropdown-menu{
+        width: 60%;
+        height: 100%;
+        background-color: rgb(94, 15, 15);
+        opacity: 1;
+        position: absolute;
+        margin-left: 40%;
+        z-index: 20;
+        transition: 1s;
+        
+        
+    }
+
+   
+   
+   
+   
+   
+
+    #dropdown-menu{
+        display: none;
+    }
+    #dropdown-menu ul li:first-child{
+        margin-top: 80%;
+        list-style: none;
+        
+    }
+
+    #dropdown-menu ul li{
+        margin-top: 25%;
+        list-style: none;
+    
+    }
+    #dropdown-menu ul li a{
+        text-decoration: none;
+        font-size: 20px;
+        margin-left: 5%;
+        color: white;
+        
+        
+    }
+
+
+    #btn{
+
+        background-color: transparent;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 68%;
+        text-align: center;
+        border: none;
+        z-index: 30;
+
+    }
+
+    #bar{
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        position: relative;
+       
+    }  
+
+    @media screen and (min-width:500px) {
+        #bar{
+            font-size: 65px;
+        }
+        #btn{
+            margin-left: 75%;
+            margin-top: 14%;
+        }
+    }
+    @media screen and (min-width:700px) {
+      #bar{
+          font-size: 85px;
+      }
+      #btn{
+          margin-left: 80%;
+          margin-top: 17%;
+      }
+  }
+
+    #btn2{
+        position: absolute;
+        margin-left: 65%;
+        margin-top: 15%;
+        display: none;
+        background-color: transparent;
+        border: none;
+    }
+
+    #bar2{
+        font-size: 50px;
+        color: white;
+    }
+    
+    
+
+
+    </style>
+</head>
+<body>
+
+    <div class="sayfa1">
+        
+        <video autoplay="true" preload="auto" poster="img/ates.mp4" loop muted id="pc_videos">
+            <source src="img/ates.mp4" type="video/mp4" id="video"></source>
+            </video>
+        <a href="https://mangalkokorec.com/index.html"><img src="img/logo4.png"></a>
+
+        <div class="social">
+            <ul>
+                <li><a href="https://www.instagram.com/mangalkokorec/"><i class="fab fa-instagram" style="color: rgb(135, 22, 211);"></i></a></li>
+                <li><a href="https://www.facebook.com/MangalKokorec/"><i class="fab fa-facebook" style="color: rgb(18, 90, 197);"></i></a></li>
+                <li><a href="#"><i class="fab fa-foursquare" style="color: #EC4371;"></i></a></li>
+                
+            </ul>
+        </div>
+
+        <div class="banner">
+            <ul>
+                <li><a href="https://mangalkokorec.com/">Ana Sayfa</a></li>
+                <li><a href="https://mangalkokorec.com/">Lezzetlerimiz</a></li>
+                <li><a href="https://mangalkokorec.com/mangal_kokorec_hakkimizda2.html">Hakkımızda</a></li>
+                <li><a href="https://mangalkokorec.com/mangal_kokorec_iletisim2.html">İletişim</a></li>
+            </ul>
+        </div>
+
+
+        <div class="hak_baslik">
+            <p>  HAKKIMIZDA </p>
+        </div>
+
+
+
+
+
+
+    </div>
+
+    <div class="sayfa2">
+        <div class="hakk_foto">
+            <img src="img/hakkimizda_1.JPG">
+
+            <div class="yazi">
+                <p>Mangal Kokoreç lezzetini, Karaköy şubemizde siz değerli müşterilerimizle
+                     buluşturmanın mutluluğunu yaşıyoruz. Temiz ve hijyenik ortamımızla; güler yüzlü
+                    çalışanlarımızın servisiyle , mangalda kokoreç lezzetine sizi de davet ediyoruz . </p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="alt">
+        <div class="boxes">
+            <p id="boxes-baslik">Adres</p>
+            <p id="boxes-bilgi">Azapkapı, Tersane Cd. 93 A, 34421 Beyoğlu/İstanbul</p>
+        </div>
+        <div class="boxes">
+            <p id="boxes-baslik">Çalışma Saatleri</p>
+            <p id="boxes-bilgi">Pazartesi - Cuma: 10.00 - 20.00
+                Cumartesi: 10.00 - 20.00</p>
+        </div>
+        <div class="boxes" id="boxess">
+            <p id="boxes-baslik">Telefon Numarası</p>
+            <p id="boxes-bilgi">(0212) 255 16 03</p>
+        </div>
+        <div class="logo-cizgi">
+            <a href="https://mangalkokorec.com/index.html"><img src="img/logo4.png"></a>
+            <div id="cizgi"></div>
+        </div>
+        <div class="desig">
+            <p>@DesignedBy <a href="https://www.linkedin.com/in/melih-cesur-068b10203/" style="color: rgb(19, 94, 206);text-decoration: none;">MelihCesur</a></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="mobile">
+
+        <button id="btn"><i class="fas fa-bars" id="bar"></i></button>
+ 
+   
+ 
+        <div id="dropdown-menu">
+            <button id="btn2"><i class="fas fa-bars" id="bar2"></i></button>
+            
+            <ul>
+                
+                <li><a href="https://mangalkokorec.com/">Ana Sayfa</a></li>
+                <li><a href="https://mangalkokorec.com/">Lezzetlerimiz</a></li>
+                <li><a href="https://mangalkokorec.com/mangal_kokorec_hakkimizda2.html">Hakkımızda</a></li>
+                <li><a href="https://mangalkokorec.com/mangal_kokorec_iletisim2.html">İletişim</a></li>
+            </ul>
+        </div>
+        
+
+        <div class="ust-banner">
+            <a href="https://mangalkokorec.com/index.html"><img src="img/logo4.png"></a>
+            <video autoplay loop muted id="mobile_video">
+                <source src="img/v1.mp4" type="video/mp4" id="video"></source>
+                </video>
+
+                <p id="hak_bas">  HAKKIMIZDA </p>
+
+                <img src="img/hakkimizda_1.JPG" id="dukkan">
+
+               
+                    <p id="yazi-mobile">Mangalda kokoreç lezzetini, Karaköy şubemizde siz değerli müşterilerimizle
+                         buluşturmanın mutluluğunu yaşıyoruz.Temiz ve hijyenik ortamımızla; güler yüzlü
+                        çalışanlarımızın servisiyle , mangalda kokoreç lezzetine sizi de davet ediyoruz . </p>
+
+
+
+                        <div class="altbanner">
+                            <div class="alt-logo">
+                                <a href="https://mangalkokorec.com/index.html"><img src="img/logo4.png"></a>
+                            </div>
+                        
+                            <div class="adres">
+                                <p>  Adres  </p>
+                            </div>
+                            <div class="adres2">
+                                <p>Azapkapı, Tersane Cd. 93 A, 34421 Beyoğlu/İstanbul</p>
+                            </div>
+                        
+                            <div class="telefon">
+                                <p>  Telefon </p>
+                            </div>
+                            <div class="telefon2">
+                                <p>(0212) 255 16 03</p>
+                            </div>
+                        
+                            <div class="sosyal">
+                                <p>  Çalışma Saatleri </p>
+                            </div>
+                        
+                            <div class="sosyal2">
+                                <p>
+                                   Pazartesi - Cuma: 10.00 - 20.00 <br>
+                                   Cumartesi - Pazar: 10.00 - 20.00
+                                </p>
+                            </div>
+                        
+                        </div>
+                        
+                
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script>
+
+        const bar = document.getElementById("btn");
+        const drop = document.getElementById("dropdown-menu");
+     
+        const bar2 = document.getElementById("btn2");
+     
+        bar.addEventListener("click",goster);
+     
+        bar2.addEventListener("click",gizle);
+     
+        function goster(){
+            drop.style.display="block";
+            bar.style.display="none";
+            bar2.style.display="block";
+        }
+     
+        function gizle(){
+            drop.style.display="none";
+            bar.style.display="flex";
+            bar.style.marginLeft ="68%";
+            bar.style.marginTop ="10%";
+        }
+     </script>
+</body>
+</html>
